@@ -4,35 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://imgs.search.brave.com/lGQ_66HqaE45xQTF61ddFG5Egs64uO92a51WQPa3ubI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDkyNjQx/MzMuanBn'); /* Replace with your image URL */
+            background-color: #f0f0f0; /* Optional: change background color */
+        }
+        .applet-container {
+            border: 2px solid #000000; /* Border color */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Inner spacing */
+            background-color: rgba(255, 233, 233, 0.514); /* Background color of the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+        }
+        h3 {
+            margin: 10px 0;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #333; /* Text color */
+        }
+        input {
+            padding: 10px; /* Inner spacing for input */
+            width: 100%; /* Full width input */
+            box-sizing: border-box; /* Include padding in width */
+        }
+        button {
+            margin-top: 10px; /* Space above button */
+            padding: 10px 20px; /* Inner spacing for button */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+    </style>
 </head>
 <body>
-    <body>
-        <div class="applet-container">
-            <h3>Type input event</h3>
-            <h1 id="displayText">Your text will appear here</h1>
-            <input type="text" id="textbox" placeholder="Type something here..." oninput="updateDisplay()">
-            <br>
-            <br>
-        
-            <h3>Click Button Event</h3>
-            <button class="btn btn-primary" onclick="showAlert()">Display Alert</button>
-        </div>
-       
+    <div class="applet-container">
+        <h3>Type input event</h3>
+        <h1 id="displayText">Your text will appear here</h1>
+        <input type="text" id="textbox" placeholder="Type something here..." oninput="updateDisplay()">
+        <br>
+        <br>
+    
+        <h3>Click Button Event</h3>
+        <button class="btn btn-primary" onclick="showAlert()">Display Alert</button>
+    </div>
+   
     <script>
-    
-    //Event Function 1
-    function updateDisplay() {
-        var textbox = document.getElementById('textbox');
-        var displayText = document.getElementById('displayText');
-        displayText.textContent = textbox.value;
-    }
-    
-    function showAlert() {
-        var textbox = document.getElementById('textbox');
-        alert("Hello " + textbox.value);
-    }
+        //Event Function 1
+        function updateDisplay() {
+            var textbox = document.getElementById('textbox');
+            var displayText = document.getElementById('displayText');
+            displayText.textContent = textbox.value;
+        }
+        
+        function showAlert() {
+            var textbox = document.getElementById('textbox');
+            alert("Hello " + textbox.value);
+        }
     </script>
-    </body>
-    
 </body>
 </html>
