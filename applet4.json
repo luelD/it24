@@ -1,0 +1,33 @@
+[
+    {
+      "student_id": 1,
+      "student_name": "Luel Dawn T. Cagay",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-01-15"
+    },
+    {
+      "student_id": 2,
+      "student_name": "Troy M. Rojo",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-02-20"
+    },
+    {
+      "student_id": 3,
+      "student_name": "Adrian M. Villarosa",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 4,
+      "student_name": "Erick James P. Rubin",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 4,
+      "student_name": "Mark Lester G. Rasonabe",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    }
+  ]
+  
