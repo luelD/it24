@@ -1,0 +1,26 @@
+[
+    {
+        "Applet_No": "Applet - Basic Events",
+        "Description": "This application contains the basic implementation of DOM events",
+        "file": "applet.html",
+        "Image": "https://imgs.search.brave.com/sJyYjRFSYSXYUfAIt4KKfCDudFxFopOL4b0rb9FbWTk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzQwLzgyLzEx/LzM2MF9GXzU0MDgy/MTE2N19hQXYza0tZ/SWFVcGIzR2tkNGli/M1F0NjFPRmNNV3VU/OC5qcGc"
+      },
+      {
+        "Applet_No": "Applet 2 - Leaflet Map",
+        "Description": "This application contains the basic web map",
+        "file": "applet2.html",
+        "Image": "https://imgs.search.brave.com/F8FT7VH5ZP2mdLuRywBs9uvWeyTC7vQnz433suKs71Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxNTU1/OTkuanBn"
+      },
+      {
+        "Applet_No": "Applet 3 - Event Button Logger",
+        "Description": "tracks and records user interactions with buttons, providing insights into usage patterns and user behavior",
+        "file": "applet3.html",
+        "Image": "https://imgs.search.brave.com/qCm_rE9dmscxeD4ddIzSjaQvrkJFzrmxb7oNxedeUko/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvdWx0cmEtaGQt/d2F6ZjY3bHp5aDVx/N2szMi5qcGc"
+      },
+      {
+        "Applet_No": "Applet 4 - Dynamic Elements",
+        "Description": "tracks and records user interactions with buttons, providing insights into usage patterns and user behavior",
+        "file": "applet4.html",
+        "Image": "https://imgs.search.brave.com/aC1dio-fLQyX7AdBKiWRRQIuoJ8DCtB1y7zGv4jEeF0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9nZXR3/YWxscGFwZXJzLmNv/bS93YWxscGFwZXIv/ZnVsbC80L2YvYy84/NDI1MzgtZnVsbC1o/ZC1iYWNrZ3JvdW5k/LWltYWdlcy0xOTIw/eDEwODAtZm9yLXdp/bmRvd3MtNy5qcGc"
+      }
+]
