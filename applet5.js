@@ -1,25 +1,24 @@
 class WeatherApp {
     constructor() {
-        // API Key Input
+        //API Key
         this.apiKey = document.getElementById('apiKeyInput');
         
-        // City Input
+        //Text Input
         this.cityInput = document.getElementById('cityInput');
         this.getWeatherBtn = document.getElementById('getWeatherBtn');
 
-        // Geolocation Input
+        //Geolocation Input
         this.getLocationBtn = document.getElementById('getLocationBtn');
 
-        // Weather Card
+        //Weather Card
         this.weatherCard = document.getElementById('weatherCard');
         this.cityName = document.getElementById('cityName');
         this.temperature = document.getElementById('temperature');
         this.description = document.getElementById('description');
         this.humidity = document.getElementById('humidity');
         this.windSpeed = document.getElementById('windSpeed');
-        this.weatherIcon = document.getElementById('weatherIcon');
 
-        // Event Listeners
+        //Event Listener
         this.getWeatherBtn.addEventListener('click', () => this.fetchWeather());
         this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
     }
@@ -34,40 +33,39 @@ class WeatherApp {
         // Set the weather icon
         const iconCode = data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-        this.weatherIcon.src = iconUrl;
+        document.getElementById('weatherIcon').src = iconUrl;
     
         this.weatherCard.style.display = 'block';
     }
+    
+    
 }
 
 class WeatherService extends WeatherApp {
     async fetchWeather() {
-        const apiKey = this.apiKey.value;
+        const apiKey = this.apiKey.value
         const city = this.cityInput.value;
-
-        if (city && apiKey) {
-            const data = await this.getWeatherData(city, apiKey);
+        if (city) {
+            const data = await this.getWeatherData(city,apiKey);
             if (data) {
-                this.displayWeather(data);
+                this.displayWeather(data,apiKey);
             } else {
                 alert('City not found. Please try again.');
             }
         } else {
-            alert('Please enter both API Key and City.');
+            alert('Please enter a city name.');
         }
     }
 
     async fetchWeatherByLocation() {
-        const apiKey = this.apiKey.value;
-
-        if (navigator.geolocation && apiKey) {
+        if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 async (position) => {
                     const { latitude, longitude } = position.coords;
-                    const data = await this.getWeatherDataByCoordinates(latitude, longitude, apiKey);
+                    const data = await this.getWeatherDataByCoordinates(latitude, longitude);
                     if (data) {
                         this.displayWeather(data);
-                        this.cityInput.value = ''; // Clear the city input when using location
+                        this.cityInput.value = '';
                     } else {
                         alert('Unable to retrieve weather data for your location.');
                     }
@@ -77,11 +75,11 @@ class WeatherService extends WeatherApp {
                 }
             );
         } else {
-            alert('Please enter an API Key and ensure location services are enabled.');
+            alert('Geolocation is not supported by this browser.');
         }
     }
 
-    async getWeatherData(city, apiKey) {
+    async getWeatherData(city,apiKey) {
         try {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
             if (response.ok) {
@@ -105,9 +103,9 @@ class WeatherService extends WeatherApp {
         return null;
     }
 }
-
 const weatherApp = new WeatherService();
 
 document.addEventListener('DOMContentLoaded', () => {
-    // No need to manually show the modal; Bootstrap handles it with data-bs attributes
+    const modal = new bootstrap.Modal(document.getElementById('infoModal'));
+    modal.show();
 });
