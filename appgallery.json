@@ -28,5 +28,11 @@
       "Description": "This application is the basic usage of the Openweather API",
       "file": "applet5.html",
       "Image": "https://imgs.search.brave.com/ffoC-yh9QrL879ZBSl4on_kEJR1tpF0NjGhq8-5tn5w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS83MC85/Ni95S0J4UHQuanBn"
+    },
+    {
+      "Applet_No": "Applet 6 - To do List",
+      "Description": "This application is your ultimate productivity companion, designed to help you organize and prioritize tasks effortlessly",
+      "file": "applet6.html",
+      "Image": "https://wallpaperaccess.com/full/654523.jpg"
     }
 ]
