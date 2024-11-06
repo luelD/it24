@@ -54,4 +54,4 @@ class AppletGallery {
     
 }
 
-const appletgallery = new AppletGallery('applet.json');
+const appletgallery = new AppletGallery('index.json');
